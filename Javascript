@@ -1,0 +1,72 @@
+JAVASCRIPT PRACTICALS CRASH COURSE
+
+JS - An open source, cross-platform, Object-oriented programming language
+
+- Used to add interactivity and dynamic effects. It can be used to manipulate HTML and CSS e.g. a popup when you click on a button
+
+Building blocks of programming languages
+1. Variables - lIKE A container to Store some data for later
+use. 
+2 + 5 + 6
+var num1 = 2, var num2 = 6
+
+var - keyword that creates a new variable. 
+
+Ensure you install JS(ES6) EXTENSION
+Variables
+<html>
+<head>
+   <title>Javascript</title>
+</head>
+<script language="javascript" type="text/javascript">
+	var name = "James";
+	var age = 45;
+	var salary = 6000.50
+	
+	//print data
+	
+	document.write("Name : " + name);
+	document.write("Age : " + age);
+	document.write("Salary : " + salary);
+</script>
+
+<body>
+</html>
+
+Operators: Symbols to perform some actions on variables.
+Expressions - A line of code that contains a valid combination of variables, values and operators e.g. var sum = num1 + num2 + num3
+
+
+
+Alternative to print values
+console.clear() - clear console
+console.log(sum)
+
+Data types - tells JS what type of value we have stored in our variables.
+
+Use camelCase for writing variables - recommended case.
+PascalCase
+snake_case
+
+Rules for naming JS Variables
+1. Names can contain letters, digits, _ and $
+var math_$
+2. Names cannot start with a digit or &
+var 1maths
+3. Names can start with _ or $
+var _maths, $maths
+4. Names are case sensitive
+var x, X
+5. Names cannot be reserved keywords.
+var new
+6. Names cannot contain a hyphen (-)
+DATE-5
+
+
+
+
+
+
+
+
+

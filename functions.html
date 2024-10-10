@@ -1,0 +1,38 @@
+<html>
+    <head>
+         <!--Script - treated as resource to be utilized whenever we require -->
+
+        <script >
+            function sayHello(){
+                var username = prompt("Enter username ");
+                document.write("Hello, my name is " + username);
+            }
+            //OR - with parameters
+            function sayHelloPar(name, age){
+                
+            
+                var name = document.getElementById("name").value;
+                var age = document.getElementById("age").value
+
+                //Terminate function if no value is passed
+                if(name == "" && age == ""){
+                    return;
+                }
+                document.write("Hello, my name is " +name + " and I am " + age);
+            }
+
+        </script>
+    </head>
+    <body>
+        <p>Click button to call the function sayHello</p>
+        <!--Onclick - An event-->
+       <!--<input type="button" onclick="sayHello()" value="Say Hello">-->
+
+        <input type="text" name="name" id = "name"placeholder="Enter name">
+        <input type="number" name = "age" id="age" placeholder="Enter age">
+        <br/> <br/>
+        <input type="button" onclick="sayHelloPar(name, age)" value="Say Hello">
+
+
+    </body>
+</html>

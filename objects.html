@@ -1,0 +1,37 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var course= {
+                "course_code": "JAV 123",
+                "course_name": "Javascript",
+                "tutor": "Lema"
+            }
+
+            document.write("Course code:" + course.course_code + "<br/>");
+            document.write("Course name:" + course.course_name + "<br/>");
+            document.write("Course tutor:" + course.tutor + "<br/>");
+
+            var text = "";
+            var x;
+
+            document.write("<br/>"+ "USING A FOR LOOP" + "<br/>")
+
+     
+
+            for(x in course){
+                //document.write(x);
+                text += x + ":" + course[x] + "<br/>"
+
+            }
+
+            document.write(text);
+
+
+
+
+        </script>
+    </body>
+</html>

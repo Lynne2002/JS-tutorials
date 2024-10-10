@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>
+            function MouseOver(){
+                document.images["img1"].src = "blue-js.png"
+            }
+            function MouseOut(){
+                document.images["img1"].src = "orange-js.png"
+            }
+            function Load(){
+                document.images["img1"].src = "orange-js.png"
+            }
+            
+        </script>
+
+    </head>
+    <body onload="Load()">
+        <img name = "img1" height="200" width="200" onmouseover="MouseOver()" onmouseout="MouseOut">
+
+    </body>
+</html>

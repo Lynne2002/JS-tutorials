@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script>
+            var arr = new Array("blue-js.png", "orange-js.png", "red-js.png", "yellow-js.png", "purple-js.png");
+            var i = 0;
+            var ref;
+            
+
+            function picLibrary(){
+                document.images[0].src = arr[i];
+                i++;
+                //Resetting index after reaching end of array
+                //document.write(arr.length);
+                if(i>=arr.length){
+                    i=0;
+                }
+
+            }
+
+            function start(){
+                ref = setInterval("picLibrary()", 1000);
+            }
+            function stop(){
+                clearInterval(ref)
+            }
+
+
+        </script>
+    </head>
+    <body onload="start()">
+        <img src="blue-js.png" name="img1" onmouseover="stop()" onmouseout="start()">
+
+    </body>
+</html>
