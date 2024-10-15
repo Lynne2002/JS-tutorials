@@ -63,6 +63,29 @@ var new
 DATE-5
 
 
+JS Numbers
+var num1= 10
+var num2 = 10.0
+
+console.log(typeof(num1))
+Semicolon in JS is optional.
+
+var divByZero = num3/0
+console.log(divByZero); //Infinity
+console.log(typeof(divByZero)); //number
+
+console.log(0/5) //0
+console.log(0/0) //NaN
+In-built number functions
+1. toString() - takes number as input and returns a string
+console.log(num1.toString())
+
+2. parseInt() - takes string numeral as input and returns a number.
+
+
+
+
+
 
 
 
