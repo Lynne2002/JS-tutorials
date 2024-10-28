@@ -1,4 +1,4 @@
-//JS IN-BUILT NUMBER FUNCTIONS
+/* //JS IN-BUILT NUMBER FUNCTIONS
 var num1 = 10
 var num2 = 10.3
 var str1 = 'a'
@@ -37,6 +37,54 @@ console.log(num.toFixed(1))
 //2 DP
 console.log(num.toFixed(2))
 //5 DP
-console.log(num.toFixed(5))
+console.log(num.toFixed(5)) */
+
+//JS Strings
+//defining strings in JS
+var myString = "JavaScript is my favourite language JavaScript"
+console.log(typeof(myString))
+
+//If your string contains a double quote - use escape sequence (\)
+var mySecondString = "Javascript is everyones \"favourite\" language"
+console.log(mySecondString)
+
+//If your string contains a single quote - use escape sequence (\)
+var mySecondString = 'Javascript is everyones \'favourite\' language'
+console.log(mySecondString)
+
+//OR
+var mySecondString = "Javascript is everyones 'favourite' language"
+var mySecondString = 'Javascript is everyones "favourite" language'
+
+//IN-BUILT STRING FUNCTIONS
+//length - returns the length of  a string
+console.log(myString.length)
+
+//Index starts from 0
+//indexOf - finding the index of a string inside another string-case sensitive
+console.log(myString.indexOf('favourite')) //17
+console.log(myString.indexOf('is')) //11
+console.log(myString.indexOf('i')) //7
+console.log(myString.indexOf('JavaScript')) //0
+console.log(myString.indexOf('java')) //case sensitivity -1 -> If the substring is not found, indexOf returns -1.
+
+// lastIndexOf - finds the last index of a string inside another string.
+console.log(myString.lastIndexOf('JavaScript'))//36
+console.log(myString.lastIndexOf('is'))//11
+
+//slice - gets a part of our string slice (start, end)
+console.log(myString.slice(0,4)) //Java
+console.log(myString.slice(17, 26))//favourite
+//- negative - starts from the end of the string
+console.log(myString.slice(-10)) //JavaScript
+//index at 10 onwards
+console.log(myString.slice(10)) // is my favourite language JavaScript
+
+//substr(startPos, length) - gets the substring 
+console.log(myString.substring(0,4)) //Java
+console.log(myString.substring(17,26)) //favourite
+console.log(myString.slice(-10)) //JavaSCript
+console.log(myString.substring(10)) // is my favourite language JavaScript
 
 
+//
