@@ -48,6 +48,9 @@ console.log(typeof(myString))
 var mySecondString = "Javascript is everyones \"favourite\" language"
 console.log(mySecondString)
 
+var myThirdString = "I love JavaScript!"
+
+
 //If your string contains a single quote - use escape sequence (\)
 var mySecondString = 'Javascript is everyones \'favourite\' language'
 console.log(mySecondString)
@@ -86,5 +89,31 @@ console.log(myString.substring(17,26)) //favourite
 console.log(myString.slice(-10)) //JavaSCript
 console.log(myString.substring(10)) // is my favourite language JavaScript
 
+//toUpperCase() - converts string to uppercase
+console.log(myString.toUpperCase())//JAVASCRIPT IS MY FAVOURITE LANGUAGE JAVASCRIPT
 
-//
+//toLowerCase() - converts string to lowercase
+console.log(myString.toLowerCase()) //javascript is my favourite language javascript
+
+//concat() - merges two or more strings
+console.log(myString.concat(mySecondString)) //JavaScript is my favourite language JavaScriptJavascript is everyones "favourite" language
+console.log(myString.concat(' ', mySecondString, ' ', myThirdString)) //JavaScript is my favourite language JavaScript Javascript is everyones "favourite" language I love JavaScript!
+
+//+ operator can also be used to concatenate two or more strings
+console.log(myString + ' ' + mySecondString)
+
+//trim() - removes whitespace from the beginning and end of a string
+var fourthString = "    I love JavaScript   "//I love JavaScript
+console.log(fourthString.trim())
+
+//charAt() - takes a position as an argument and returns the character at that position
+var fifthString = "I am learning JavaScript"
+console.log(fifthString.charAt(5))//l
+console.log(fifthString.charAt(4)) //empty space
+
+//split() - splits string on basis of passed arguments and returns an array of split strings
+console.log(fifthString.split()) //[ 'I am learning JavaScript' ]
+console.log(fifthString.split(' '))//[ 'I', 'am', 'learning', 'JavaScript' ]
+
+var sixthString = "JavaScript, HTML, CSS, Node.JS"
+console.log(sixthString.split(','))//[ 'JavaScript', ' HTML', ' CSS', ' Node.JS' ]
