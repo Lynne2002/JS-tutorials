@@ -117,3 +117,15 @@ console.log(fifthString.split(' '))//[ 'I', 'am', 'learning', 'JavaScript' ]
 
 var sixthString = "JavaScript, HTML, CSS, Node.JS"
 console.log(sixthString.split(','))//[ 'JavaScript', ' HTML', ' CSS', ' Node.JS' ]
+
+//Null vs undefined
+//Null - A value assigned to a variable to show that the value holds no value
+//Undefined - A variable has been declared but has not been initialized/ not been assigned a value
+
+var testVar //holds no value
+console.log(testVar) //undefined
+
+testVar = null
+console.log(testVar) //holds the value null
+
+
