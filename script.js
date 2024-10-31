@@ -146,5 +146,55 @@ else{
     console.log('Neither are true')
 }
 
+//Switch conditional statement -> replacement for if...else if
+var currentDay = 'Monday'
+
+/* if(currentDay == 'Monday'){
+    console.log('Time: 01:00-04:00')
+}
+else if(currentDay == 'Tuesday'){
+    console.log('Time: 02:00-06:00')
+}
+else if(currentDay == 'Wednesday'){
+    console.log('Time: 03:00-06:00')
+}
+else if(currentDay == 'Thursday'){
+    console.log('Time: 10:00-04:00')
+}
+else if(currentDay == 'Friday'){
+    console.log('Time: 08:00-06:00')
+}
+else if(currentDay == 'Saturday'){
+    console.log('Time: 09:00-04:00')
+} */
+
+//Cleaner/better way of doing the above
+//SWITCH - pass a value based on how different cases are executed/.
+switch(currentDay){
+    case 'Monday':
+        console.log('Time: 01:00-04:00')
+        break;
+    case 'Tuesday':
+        console.log('Time: 02:00-05:00')
+        break;
+    case 'Wednesday':
+        console.log('Time: 03:00-06:00')
+        break;
+    case 'Thursday':
+        console.log('Time: 10:00-04:00')
+        break;
+    case 'Friday':
+        console.log('Time: 08:00-06:00')
+        break;
+    case 'Saturday':
+        console.log('Time: 09:00-04:00')
+        break;
+        
+}
+
+
+
+
+
 
 
