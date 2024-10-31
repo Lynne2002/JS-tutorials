@@ -128,4 +128,23 @@ console.log(testVar) //undefined
 testVar = null
 console.log(testVar) //holds the value null
 
+// If else conditional statement
+if(2>4){
+    console.log(true)
+} else{
+    console.log(false)
+}
+
+// if..else if
+if(5 > 7){
+    console.log('5 .7')
+}
+else if(2 > 4){
+    console.log('4>2')
+}
+else{
+    console.log('Neither are true')
+}
+
+
 
